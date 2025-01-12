@@ -8,5 +8,5 @@ urlpatterns = [
     # path('patients/', list_patients),
     # path('patients/<int:id>/', detail_patients),
     path('patients/', ListPatientsView.as_view()),
-    path('patients/<int:id>/', DetailPatientView.as_view()),
+    path('patients/<int:pk>/', DetailPatientView.as_view()),
 ]
